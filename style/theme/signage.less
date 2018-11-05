@@ -1,0 +1,75 @@
+.sign {
+  border: 2px solid @black;
+  width: 550px;
+  margin: auto;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+
+  .title {
+    .ff-sans-con-bold;
+    // border: 1px solid @black;
+    text-transform: uppercase;
+    font-size: 140px;
+    text-align: center;
+    line-height: .85;
+    letter-spacing: -4px;
+    padding: 10px 0;
+
+    &.success {
+      background-color: forestgreen;
+      color: @white;
+    }
+
+    &.warning {
+      background-color: @warning;
+      color: @black;
+    }
+
+    &.notice {
+      background-color: #007CC2;
+      color: @white;
+    }
+
+    &.thankyou {
+      background-color: darkgreen;
+      color: @white;
+      font-size: 90px;
+    }
+
+  }
+
+  .main-copy {
+    .ff-sans-con-bold;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 20px 0 0 0;
+  }
+
+  .sub-copy {
+    .ff-sans-con-bold;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin: 20px 0 0 0;
+  }
+
+  a {
+    color: #007CC2;
+
+    &:hover {
+      color: darken(#007CC2, 10%); }
+  }
+
+  input[type="search"] {
+    width: 500px;
+  }
+
+  input[type="submit"] {
+    display: none;
+  }
+}

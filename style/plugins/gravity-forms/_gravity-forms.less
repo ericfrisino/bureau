@@ -1,0 +1,81 @@
+.gform_wrapper {
+
+	input[type="checkbox"] {
+		vertical-align: top !important;
+		margin-top: 3px;
+	}
+
+	input[type="radio"] {
+		vertical-align: top !important;
+		margin-top: 5px !important;
+	}
+
+	input[type="text"] {
+		margin-bottom: 3px;
+	}
+
+	li.two-up {
+		width: 50%;
+		float:left;
+	}
+
+	li.two-up-wide {
+		width: 75%;
+		float:left;
+	}
+
+	li.two-up-skinny {
+		width: 25%;
+		float:left;
+	}
+
+	li.four-up {
+		width: 25%;
+		float:left;
+	}
+
+	.three-up {
+		li {
+			width: 33%;
+			float:left; }
+	}
+
+	.five-up {
+		li {
+			width: 20%;
+			float:left; }
+	}
+
+	.six-up {
+		li {
+			width: 16%;
+			float:left; }
+	}
+
+	.description,
+	.gfield_description,
+	.gsection_description,
+	.instruction {
+		font-size: 100% !important;
+		margin: 0 !important;
+		padding: 0 !important; }
+
+	.gform_footer {
+		text-align: center !important;
+
+		& input[type="submit"] {
+			.ff-serif;
+			font-size: 25px !important;
+			background-color: @link-color;
+			padding: 8px 10px 10px 10px;
+
+			&:hover {
+				background-color: @link-color-hover;
+			}// & input[type="submit"]:hover
+		}// & input[type="submit"]
+	}// .gform_footer
+}
+
+.gform_wrapper ul li input:checked + label { font-weight: normal !important; }
+
+body .gform_wrapper ul li.field_description_below div.ginput_container_checkbox, body .gform_wrapper ul li.field_description_below div.ginput_container_radio, body .gform_wrapper .top_label div.ginput_container { margin-top: 0 !important; }

@@ -1,0 +1,122 @@
+.feet-content-container {
+	display: block;
+	height: auto;
+	color: @white;
+	padding: 15px;
+
+	&.darkblue-solid { background-color: #00243B; }
+
+	&.blue-gradient {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#054870+0,007da9+100 */
+		background: #054870; /* Old browsers */
+		background: -moz-linear-gradient(top, #054870 0%, #007da9 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #054870 0%, #007da9 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #054870 0%, #007da9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#054870', endColorstr='#007da9', GradientType=0); /* IE6-9 */
+	}
+
+	.the-feet-content {
+		padding: 0 20px 20px 20px;
+		border: 1px solid @white;
+	}
+
+	h1 {
+		.ff-headline-semi;
+		text-align: center;
+		font-size: 105px;
+		line-height: 40px;
+		margin-top: 35px;
+		text-transform: uppercase;
+
+		.sub-head {
+			.ff-sans;
+			font-size: 36px;
+			line-height: 0px;
+		}
+
+		.additional-info {
+			.ff-sans-con-light;
+			font-size: 28px;
+			line-height: 30px;
+		}
+	}
+
+	.the-feet-graphic {
+		margin: 30px auto;
+		width: 75%;
+	}
+
+	h2 {
+		.ff-sans-con-med;
+		font-size: @font-size-large;
+	}
+
+	.the-feet-callout {
+		.ff-sans-con-med;
+		font-size: 29px;
+		line-height: 33px;
+		text-align: center;
+		margin: 30px 0 10px 0;
+	}
+
+	.three-one {
+		.ff-sans-med;
+		width: 33.3%;
+		float: left;
+		text-align: center;
+		font-size: 24px;
+
+		.fa-check-square-o {
+			color: red;
+		}
+	}
+
+	a {
+		color: @white;
+
+		&.action-button {
+			display: block;
+			width: 100%;
+			.ff-sans-med;
+			text-align: center;
+			font-size: 16px;
+			line-height: 1.25em;
+			padding: 7px 0;
+			margin: 50px 0;
+		}
+
+		&.orange {
+			background-color: #F6891F;
+
+			&:hover {
+				background-color: darken( #F6891F, 10% );
+			}
+		}
+	}
+
+
+	.the-feet-footer {
+
+		.logo {
+			width: 40%;
+			float: left;
+			margin: 10px 0 0 0;
+		}
+
+		.contact-info {
+			width: 50%;
+			float: right;
+			text-align: right;
+
+			.site-link {
+				font-size: 19px;
+			}
+
+			.contact {
+				width: 49%;
+				float: right;
+				font-size: 12px;
+			}
+		}
+	}
+}

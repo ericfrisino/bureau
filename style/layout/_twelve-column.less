@@ -1,0 +1,196 @@
+/*
+ * File: twelve-column.less
+ * Compiles into: ../style.less
+ * Compile order: 3
+ */
+
+//------------------------------------------------------------------------------------------------------------ 01: 12 COLUMN GRID
+
+.container {
+	margin: 0 auto;
+	padding: 0;
+	position: relative; }
+
+.container .column,
+.container .columns,
+.site-content .column {
+	display: inline;
+	float: left; }
+
+.row { 
+	margin-bottom: 20px; }
+
+.column {
+	&.one {
+		width: 78px; margin: 0 12px; // 78 is the width of a column
+
+		&.left  { width: 90px; margin: 0 12px 0 0; } // 78 + 12 = 90
+		&.right { width: 90px; margin: 0 0 0 12px; } // 78 + 12 = 90
+		&.full  { width: 102px; margin: 0; } // 78 + 24 = 102
+
+		&:first-child { width: 78px; margin: 0 12px 0 0; } // without left margin
+		&:last-child  { width: 78px; margin: 0 0 0 12px; } // without right margin
+		&:only-child  { width: 78px; margin: 0 561px; } // (1200 - 78) / 2 = 561
+	} //column.one
+
+	&.two {
+		width: 180px; margin: 0 12px; // (78 * 2) + 24 = 180
+
+		&.left  { width: 192px; margin: 0 12px 0 0; } // 180 + 12 = 192
+		&.right { width: 192px; margin: 0 0 0 12px; } // 180 + 12 = 192
+		&.full  { width: 204px; margin: 0; } // 180 + 24 = 204
+		
+		&:first-child { width: 180px; margin: 0 12px 0 0; } // without left margin
+		&:last-child  { width: 180px; margin: 0 12px 0 0; } // without right margin
+		&:only-child  { width: 180px; margin: 0 510px; } // (1200 - 180) / 2 = 510
+	} //column.two
+
+	&.three {
+		width: 282px; margin: 0 12px; // (78 * 3) + (24 * 2) = 282
+
+		&.left  { width: 294px; margin: 0 12px 0 0; } // 282 + 12 = 294
+		&.right { width: 270px; margin: 0 0 0 12px; } // 282 + 12 = 294
+		&.full  { width: 306px; margin: 0; } // 282 + 24 = 306
+
+		&:first-child { width: 282px; margin: 0 12px 0 0; } // without left margin
+		&:last-child  { width: 282px; margin: 0 0 0 12px; } // without right margin
+		&:only-child  { width: 282px; margin: 0 459px; } // (1200 - 282) / 2 = 459
+	} //column.three
+
+	&.four {
+		width: 384px; margin: 0 12px; // (78 * 4) + (24 * 3) = 384
+
+		&.left  { width: 396px; margin: 0 12px 0 0; } // 384 + 12 = 396
+		&.right { width: 396px; margin: 0 0 0 12px; } // 384 + 12 = 396
+		&.full  { width: 408px; margin: 0; } // 384 + 24 = 408
+
+		&:first-child { width: 384px; margin: 0 12px 0 0; } // without left margin
+		&:last-child  { width: 384px; margin: 0 0 0 12px; } // without right margin
+		&:only-child  { width: 384px; margin: 0 426px; } // (1200 - 384) / 2 = 426
+	} //column.four
+
+	&.five {
+		width: 486px; margin: 0 12px; // (78 * 5) + (24 * 4) = 486
+
+		&.left  { width: 498px; margin: 0 12px 0 0; } // 486 + 12 = 498
+		&.right { width: 498px; margin: 0 0 0 12px; } // 486 + 12 = 498
+		&.full  { width: 510px; margin: 0; } // 486 + 24 = 510
+
+		&:first-child { width: 486px; margin: 0 12px 0 0; } // without left margin
+		&:last-child  { width: 486px; margin: 0 0 0 12px; } // without right margin
+		&:only-child  { width: 486px; margin: 0 357px; } // (1200 - 486) / 2 = 357
+	} //column.five
+
+	&.six {
+		width: 588px; margin: 0 12px; // (78 * 6) + (24 * 5) = 588
+
+		&.left  { width: 600px; margin: 0 12px 0 0; } // 588 + 12 = 600
+		&.right { width: 600px; margin: 0 0 0 12px; } // 588 + 12 = 600
+		&.full  { width: 612px; margin: 0; } // 588 + 24 = 612
+
+		&:first-child { width: 588px; margin: 0 12px 0 0; } // without left margin
+		&:last-child  { width: 588px; margin: 0 0 0 12px; } // without right margin
+		&:only-child  { width: 588px; margin: 0 306px; } // (1200 - 588) / 2 = 306
+	} //column.six
+
+	&.seven {
+		width: 690px; margin: 0 12px; // (78 * 7) + (24 * 6) = 690
+
+		&.left  { width: 702px; margin: 0 12px 0 0; } // 690 + 12 = 702
+		&.right { width: 702px; margin: 0 0 0 12px; } // 690 + 12 = 702
+		&.full  { width: 714px; margin: 0; } // 690 + 24 = 714
+
+		&:first-child { width: 690px; margin: 0 12px 0 0; } // without left margin
+		&:last-child  { width: 690px; margin: 0 0 0 12px; } // without right margin
+		&:only-child  { width: 690px; margin: 0 255px; } // (1200 - 690) / 2 = 255
+	} //column.seven
+
+	&.eight {
+		width: 792px; margin: 0 12px; // (78 * 8) + (24 * 7) = 792
+
+		&.left  { width: 804px; margin: 0 12px 0 0; } // 792 + 12 = 804
+		&.right { width: 804px; margin: 0 0 0 12px; } // 792 + 12 = 804
+		&.full  { width: 816px; margin: 0; } // 792 + 24 = 816
+
+		&:first-child { width: 792px; margin: 0 12px 0 0; } // without left margin
+		&:last-child  { width: 792px; margin: 0 0 0 12px; } // without right margin
+		&:only-child  { width: 792px; margin: 0 204px; } // (1200 - 792) / 2 = 204
+	} //column.eight
+
+	&.nine {
+		width: 894px; margin: 0 12px; // (78 * 9) + (24 * 8) = 894
+
+		&.left  { width: 906px; margin: 0 12px 0 0; } // 894 + 12 = 906
+		&.right { width: 906px; margin: 0 0 0 12px; } // 894 + 12 = 906
+		&.full  { width: 918px; margin: 0; } // 894 + 24 = 918
+
+		&:first-child { width: 894px; margin: 0 12px 0 0; } // without left margin
+		&:last-child  { width: 894px; margin: 0 0 0 12px; } // without right margin
+		&:only-child  { width: 894px; margin: 0 153px; } // (1200 - 894) / 2 = 153
+	} //column.nine
+
+	&.ten {
+		width: 996px; margin: 0 12px; // (78 * 10) + (24 * 9) = 996
+
+		&.left  { width: 906px; margin: 0 12px 0 0; } // 996 + 12 = 906
+		&.right { width: 906px; margin: 0 0 0 12px; } // 996 + 12 = 906
+		&.full  { width: 918px; margin: 0; } // 996 + 24 = 918
+
+		&:first-child { width: 996px; margin: 0 12px 0 0; } // without left margin
+		&:last-child  { width: 996px; margin: 0 0 0 12px; } // without right margin
+		&:only-child  { width: 996px; margin: 0 102px; } // (1200 - 996) / 2 = 102
+	} //column.ten
+
+	&.eleven {
+		width: 1098px; margin: 0 12px; // (78 * 11) + (24 * 10) = 1098
+
+		&.left  { width: 1110px; margin: 0 12px 0 0; } // 1098 + 12 = 1110
+		&.right { width: 1110px; margin: 0 0 0 12px; } // 1098 + 12 = 1110
+		&.full  { width: 1122px; margin: 0; } // 1098 + 24 = 1122
+
+		&:first-child { width: 1098px; margin: 0 12px 0 0; } // without left margin
+		&:last-child  { width: 1098px; margin: 0 0 0 12px; } // without right margin
+		&:only-child  { width: 1098px; margin: 0 51px; } // (1200 - 1098) / 2 = 51
+	} //column.eleven
+
+	&.twelve {
+		width: 1200px; margin: 0; // (78 * 12) + (24 * 10) = 1200
+	} //column.twelve
+} //.column
+
+//------------------------------------------------------------------------------------------------------------ 02: CLEARNING
+.container:after { 
+	content: "\0020"; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+.row:after,
+.clearfix:after {
+  clear: both; }
+
+.row,
+.clearfix {
+  zoom: 1; }
+
+/* You can also use a <br class="clear" /> to clear columns */
+  .clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }

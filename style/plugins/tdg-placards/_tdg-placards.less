@@ -1,0 +1,94 @@
+.tdg-placard-lookup-container {
+	margin: 40px 0;
+
+	background-color: @grey-lightest;
+	color: @grey-darkish;
+	padding: 17px 20px 20px 20px;
+	border: 2px solid @grey-light;
+
+	h2 {
+		text-align: center;
+	}
+
+	form {
+		text-align: center;
+		margin: 30px 0 0 0;
+
+		input[type="number"] {
+			text-align: center;
+			font-size: 40px;
+			width: 200px;
+		}
+
+		input[type="submit"] {
+			font-size: 14px;
+			text-transform: uppercase;
+			background-color: @tapr-hold;
+			margin-top: 10px;
+			color: @grey-darker;
+			.ff-sans-con-med;
+
+			&:hover {
+				color: #000;
+			}
+		}
+	}
+}
+
+.tdg-placard-results {
+	border-bottom: 1px solid @grey-light;
+
+	&:first-of-type {
+		border-top: 1px solid @grey-light;
+	}
+
+	.placard-image {
+		width: 30%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.placard-information {
+		width: 70%;
+		padding: 10px;
+
+		dl.tdg-placards {
+
+			dt {
+				.ff-sans-con-med;
+				margin-right: 5px;
+			}
+
+			dd {
+				margin-bottom: 5px;
+
+				&.forbidden {
+					color: @tapr-canceled;
+				}
+			}
+
+		}
+	}
+}
+
+
+.tdgp-placard-list-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}
+
+
+.non-worded-placard {
+	width: 12%;
+	text-align: center;
+	.ff-sans-con-med;
+	margin-bottom: 20px;
+	font-size: 11px;
+
+	img {width: 100%; }
+}
+
+

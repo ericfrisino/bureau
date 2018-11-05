@@ -1,0 +1,95 @@
+
+// Structural layout
+div#container {
+ width: 74.5%;
+ float: left;
+}
+
+.woocommerce-breadcrumb {
+	margin-bottom: 25px !important;
+}
+
+#content[role="main"] {
+	margin-top: 0;
+
+	.summary.entry-summary {
+		margin-top: 10px;
+	}
+}
+
+// Product Archive Page
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+	width: 16.95%;
+}
+
+
+
+
+// Product Page
+
+h1.product_title.entry-title {
+	.h3;
+}
+
+.woocommerce table.shop_attributes {
+	border-top: 1px solid @grey-light;
+}
+
+.woocommerce table.shop_attributes td,
+.woocommerce table.shop_attributes th {
+	border-bottom: 1px solid @grey-light;
+	background-color: @white;
+}
+
+.woocommerce table.shop_attributes td {
+	font-style: normal;
+}
+
+.woocommerce table.shop_attributes th {
+	width: auto;
+	font-weight: 500;
+}
+
+.non-stocking.cart {
+	margin-bottom: 2em;
+}
+
+
+
+
+
+// Widgets
+ul.product-categories {
+	border-top: 1px solid @grey-lighter;
+
+	li {
+		border-bottom: 1px solid @grey-lighter;
+		padding: 2px 0;
+
+		.count{
+			float: right;
+		}
+	}
+}
+
+.homepage-product-list .product_list_widget {
+	list-style: none;
+	margin: 0;
+
+	li {
+		width: 15%;
+		float: left;
+		margin-right: 2%;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.product-title {
+		.h6;
+		font-size: 14px;
+		display: block;
+	}
+}

@@ -1,0 +1,73 @@
+// TODO: Convert all colors to constants.
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+  font-size: .9em;
+  border-collapse: collapse;
+  border-top: 1px solid #EEE;
+
+  &.mydn-archive-table { border-top: 0;}
+
+  &.vertical { border-top: 1px solid #EEE; }
+
+  // TODO: Deal with this style.. create a green constant for the site.
+  .fa-check.yes {
+    color: green; }
+
+  .fa-times {
+    color: #DDD; }
+
+
+}// table
+
+// tr:nth-child(even) {
+//   background-color: #FEFEFE; }
+
+th {
+  .ff-sans-con-med;
+  text-align: left;
+  padding: 10px;
+  padding-top: 15px;
+  background-color: #EEE;
+  text-transform: uppercase;
+  color: #444;
+  line-height: 1em;
+  border-bottom: 1px solid #FFF; }
+
+td {
+  text-align: left;
+  padding: 10px 10px;
+  border-bottom: 1px solid #EEE;
+  color: #666; }
+
+
+.catalog-downloads {
+  background-color: deeppink;
+  td.no-bottom-border {
+    border-bottom: 0 !important;
+  }
+}
+
+table.all-cell-borders {
+  //th {
+  //  border: 2px solid #FFF;
+  //}
+
+  //td {
+  //  border-bottom: 1px solid #FFF;
+  //}
+
+  th[scope="col"] {
+    border-right: 1px solid #FFF;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  tbody {
+    td {
+      border-right: 1px solid #EEE;
+    }
+  }
+}

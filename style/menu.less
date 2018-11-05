@@ -1,0 +1,229 @@
+/*
+ * File: menu.less
+ * Compiles into: ../style.less
+ * Compile order: 7
+ * TOC:
+ *	1. Large Screen Menu
+ *	2. Small Screen Menu (600px Max)
+*/
+
+
+
+//------------------------------------------------------------------------------------------------------------ 01: LARGE SCREEN MENU
+
+
+.main-navigation {
+  border-bottom: 5px solid @menu-border;
+  background-color: @menu-color;
+  margin: 10px 0 20px 0;
+  z-index: 100000000;
+  width: 100%;
+  float: left;
+  clear: both;
+
+  li > ul, li > ol {
+      margin-left: 0; }
+
+  ul {
+    list-style: none;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: 100000000;
+
+    li { // ul li
+      .ff-serif-med;
+      // display: inline-block;
+      float: left;
+      position: relative;
+      text-transform: uppercase;
+      font-size: 16px;
+      margin-bottom: 0;
+      z-index: 100000000;
+
+        &.home a {
+          padding-left: 20px;
+          padding-right: 20px; }
+
+	    &:hover {
+	    	background-color: @menu-highlight;
+	      color: #FFF;
+
+	      a { color: #FFF; }
+
+	      .fa-caret-down { 
+	        color: #FFF; }
+
+	      ul { //ul li:hover ul
+	      	display: inline-block;
+	      	position: absolute;
+			top: 42px;
+	      	left: 0;
+	      	// border-right: 1px solid #eee;
+            // width:100%;
+            background-color: @grey-lighter;
+            margin-top: 0;
+            border-top: 5px solid @menu-border;
+            width: 240px;
+
+            li {
+              // border-right: 1px solid @grey-light;
+              display: block;
+              font-size: 14px;
+              width: 240px;
+
+              a { width: 240px;
+                color: @grey-dark;
+
+                &:hover {
+                  color: #FFF !important; }
+              } // a
+
+              ul { display: none; }
+
+              &:hover {
+                background-color: @menu-highlight;
+                color: #FFF;
+
+                ul {//ul li:hover ul li:hover ul
+                  display: inline-block;
+                  position: absolute;
+                  left: 240px;
+                  top: 0;
+                  border-top: 0;
+                  width: 960px;
+
+                  li {
+                    // border-right: 1px solid @grey-light;
+                    display: block;
+                    font-size: 12px;
+                    width: 240px;
+
+                    a {
+                      width: 240px;
+                      color: @grey-dark;
+                      padding: 5px 10px;
+
+                      &:hover {
+                        color: #FFF; }
+                    } // a
+
+                    ul { display: none; }
+
+                    &:hover {
+                      background-color: @menu-highlight;
+                      color: #FFF !important; }
+                  }
+                }//ul li:hover ul li:hover ul
+              } //&:hover
+		      
+            }
+        }// ul li:hover ul
+      }
+		  
+      a {
+        padding: 10px 10px 7px 10px;
+        margin: 0;
+        color: #333;
+        text-decoration: none;
+        display: inline-block;
+
+        .fa-caret-down {
+            color: #AAA; }
+      } // a
+    }//ul.nav-menu li
+
+    ul {
+      display:none; }
+
+  }// ul.nav-menu
+
+  .lang-item {
+    float: right;
+  }
+} //.main-navigation
+
+
+
+.menu-top-menu-container {
+  @media only screen and (max-width: 600px) {
+    display:none;
+  }
+}
+
+
+
+//------------------------------------------------------------------------------------------------------------ 02: SMALL SCREEN MENU
+.menu-toggle {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
+	}
+
+  .main-menu-toggle { display: none; }
+
+	.main-navigation ul {
+      li {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+	}
+}
+
+
+.show-small-menu {
+  text-align: center;
+  .ff-serif-med;
+  font-size: 1.25em;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  float: left;
+  width: 50%;
+
+  a {
+    padding: 5px 7px;
+    background-color: @grey-lighter;
+
+    &:hover {
+      background-color: @link-color;
+      color: @white;
+    }
+  }
+
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+
+  a {
+    padding: 5px 7px;
+    background-color: @grey-lighter;
+
+    &:hover {
+      background-color: @link-color;
+      color: @white;
+    }
+  }
+}

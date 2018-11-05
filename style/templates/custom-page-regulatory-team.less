@@ -1,0 +1,36 @@
+/*
+ * File: custom-page-template.less
+ * Compiles into: ../style.less
+ * Compile order: 5
+ * TOC:
+ *	1. 
+*/
+
+
+
+//------------------------------------------------------------------------------------------------------------ 01: Regulatory Team
+.regulatory-team-member {
+  background-color: @grey-lightest;
+  color: @grey-darkish;
+  padding: 17px 20px 20px 20px;
+  border: 2px solid @grey-light;
+  margin-bottom: 30px;
+}
+
+.team-member-image {
+  width: 100px;
+  float:left; }
+
+.team-member-info {
+  float:right;
+  width: 725px;
+
+  &:after { clear:right; }
+
+  .team-member-name { .h3; }
+
+  .team-member-bio { }
+
+  .team-member-links { }
+}
+

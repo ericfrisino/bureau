@@ -1,0 +1,73 @@
+//------------------------------------------------------------------------------------------------------------ 01: Ordered & Unordered Lists
+ul, ol {
+  margin: 0 0 1em 1.5em;
+
+  li { margin-bottom: .5em; }
+}// ul, ol
+
+ul {
+  list-style-type: disc;
+
+  &.none   { list-style: none;         margin: 0 0 1em 0;           li { margin-bottom:  0;} }
+  &.disc   { list-style-type: disc; 			                          li { margin-bottom: .5em;} }
+  &.square { list-style-type: square;		                            li { margin-bottom: .5em;} }
+  &.circle { list-style-type: circle;		                            li { margin-bottom: .5em;} }
+}// ul
+
+ol {
+  list-style-type: decimal;
+
+  &.armenian 							{ list-style-type: armenian; 							li { margin-bottom: .5em;} }
+  &.cjk-ideographic 			{ list-style-type: cjk-ideographic;				li { margin-bottom: .5em;} }
+  &.decimal 							{ list-style-type: decimal;								li { margin-bottom: .5em;} }
+  &.decimal-leading-zero 	{ list-style-type: decimal-leading-zero;	li { margin-bottom: .5em;} }
+  &.georgian 							{ list-style-type: georgian;							li { margin-bottom: .5em;} }
+  &.hebrew 								{ list-style-type: hebrew;								li { margin-bottom: .5em;} }
+  &.hiragana 							{ list-style-type: hiragana;							li { margin-bottom: .5em;} }
+  &.hiragana-iroha 				{ list-style-type: hiragana-iroha;				li { margin-bottom: .5em;} }
+  &.katakana 							{ list-style-type: katakana;							li { margin-bottom: .5em;} }
+  &.katakana-iroha 				{ list-style-type: katakana-iroha;				li { margin-bottom: .5em;} }
+  &.lower-alpha 					{ list-style-type: lower-alpha;						li { margin-bottom: .5em;} }
+  &.lower-greek 					{ list-style-type: lower-greek;						li { margin-bottom: .5em;} }
+  &.lower-latin 					{ list-style-type: lower-latin;						li { margin-bottom: .5em;} }
+  &.lower-roman 					{ list-style-type: lower-roman;						li { margin-bottom: .5em;} }
+  &.upper-alpha 					{ list-style-type: upper-alpha;						li { margin-bottom: .5em;} }
+  &.upper-latin 					{ list-style-type: upper-latin;						li { margin-bottom: .5em;} }
+  &.upper-roman 					{ list-style-type: upper-roman;						li { margin-bottom: .5em;} }
+  &.none                  { list-style: none;   margin: 0 0 1em 0;  li { margin-bottom:  0;} }
+}// ol
+
+li > ul, li > ol {
+  margin-bottom: 5px;
+  margin-left: 1.5em; }
+
+
+
+//------------------------------------------------------------------------------------------------------------ 02: Definition Lists
+dl {
+
+  dt {
+    float: left;
+    clear: left;
+    margin-right: 15px; }
+
+  dd {
+    margin-left: 30px;
+    margin-bottom: 10px; }
+
+  &.reg-help-q {
+
+    dt {
+      color: darken(@primary, 10%);
+      border-left: none;
+      margin-bottom: 20px;
+      font-size: 1.2em;
+      float: none;
+    }
+
+    dd {
+      float: none;
+    }
+  }
+
+}// dl

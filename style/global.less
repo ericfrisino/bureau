@@ -1,0 +1,477 @@
+/*
+ * File: global.less
+ * Compiles into: ../style.less
+ * Compile order: 3
+ * TOC:
+ *	1. HTML Elements
+ *	2. Typography
+ *	3. Inputs & Buttons
+ *	4. Links
+ *	5. Alignment
+ *	6. Clearing
+ *	7. Selections
+*/
+
+//------------------------------------------------------------------------------------------------------------ 01: HTML ELEMENTS
+
+html { } //gone
+
+body { //gone
+	font-size: @font-size-base;
+	line-height: @line-height;
+	word-wrap: break-word;
+	color: @font-color;
+  .ff-base; }
+
+hr { //gone
+	background-color: @grey-light;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em; }
+	
+ul, ol { //gone
+	margin: 0 0 1em 1.5em;
+
+  li { margin-bottom: .5em; }
+
+}
+
+ul { //gone
+  list-style-type: disc;
+
+  &.none   { list-style: none;         margin: 0 0 1em 0;           li { margin-bottom:  0em;} }
+	&.disc   { list-style-type: disc; 			                          li { margin-bottom: .5em;} }
+	&.square { list-style-type: square;		                            li { margin-bottom: .5em;} }
+	&.circle { list-style-type: circle;		                            li { margin-bottom: .5em;} }
+}
+
+ol { //gone
+	list-style-type: decimal;
+
+	&.armenian 							{ list-style-type: armenian; 							li { margin-bottom: .5em;} }
+	&.cjk-ideographic 			{ list-style-type: cjk-ideographic;				li { margin-bottom: .5em;} }
+	&.decimal 							{ list-style-type: decimal;								li { margin-bottom: .5em;} }
+	&.decimal-leading-zero 	{ list-style-type: decimal-leading-zero;	li { margin-bottom: .5em;} }
+	&.georgian 							{ list-style-type: georgian;							li { margin-bottom: .5em;} }
+	&.hebrew 								{ list-style-type: hebrew;								li { margin-bottom: .5em;} }
+	&.hiragana 							{ list-style-type: hiragana;							li { margin-bottom: .5em;} }
+	&.hiragana-iroha 				{ list-style-type: hiragana-iroha;				li { margin-bottom: .5em;} }
+	&.katakana 							{ list-style-type: katakana;							li { margin-bottom: .5em;} }
+	&.katakana-iroha 				{ list-style-type: katakana-iroha;				li { margin-bottom: .5em;} }
+	&.lower-alpha 					{ list-style-type: lower-alpha;						li { margin-bottom: .5em;} }
+	&.lower-greek 					{ list-style-type: lower-greek;						li { margin-bottom: .5em;} }
+	&.lower-latin 					{ list-style-type: lower-latin;						li { margin-bottom: .5em;} }
+	&.lower-roman 					{ list-style-type: lower-roman;						li { margin-bottom: .5em;} }
+	&.upper-alpha 					{ list-style-type: upper-alpha;						li { margin-bottom: .5em;} }
+	&.upper-latin 					{ list-style-type: upper-latin;						li { margin-bottom: .5em;} }
+	&.upper-roman 					{ list-style-type: upper-roman;						li { margin-bottom: .5em;} }
+  &.none                  { list-style: none;   margin: 0 0 1em 0;  li { margin-bottom:  0em;} }
+
+}
+
+li > ul, li > ol { //gone
+	margin-bottom: 5px;
+	margin-left: 1.5em; }
+	
+// DEFINITION LISTS
+dl { } //gone
+
+dt { //gone
+  float: left;
+  clear: left;
+  margin-right: 15px; }
+  
+dd { //gone
+  margin-left: 30px;
+  margin-bottom: 10px; }
+
+img { //gone
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */ }
+
+figure {
+	margin: 0; }
+	
+table { //gone
+  margin: 0 0 1.5em;
+  width: 100%;
+  font-size: .9em;
+  border-collapse: collapse;
+  // border-top: 1px solid #EEE;
+
+  &.mydn-archive-table { border-top: 0px;}
+
+  &.vertical { border-top: 1px solid #EEE; }
+
+  .fa-check {
+    color: green; }
+
+  .fa-times {
+    color: #DDD; }
+
+	&.catalog-downloads {
+		td { vertical-align: top; }
+		td.no-bottom-border {
+			border-bottom: 0 !important;
+		}
+	}
+}// table
+
+// tr:nth-child(even) { //gone
+//   background-color: #FEFEFE; }
+  
+th { //gone
+  .ff-sans-con-med;
+  text-align: left;
+  padding: 10px;
+  padding-top: 15px;
+  background-color: #EEE;
+  text-transform: uppercase;
+  color: #444;
+  line-height: 1em;
+  border-bottom: 1px solid #FFF; }
+
+td { //gone
+  text-align: left;
+  padding: 10px 10px;
+  border-bottom: 1px solid #EEE;
+  color: #666; }
+
+
+form#mc-embedded-subscribe-form label { display: inline;  }
+
+//------------------------------------------------------------------------------------------------------------ 02: TYPOGRAPHY
+
+//------------------------------------------------------ HEADERS
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+	.ff-heading;
+	clear: both;
+	line-height: 1.3em;
+  margin-bottom: 15px; }
+
+h1, .h1 { font-size: @font-size-h1; }
+h2, .h2 { font-size: @font-size-h2; }
+h3, .h3 { font-size: @font-size-h3; }
+h4, .h4 { font-size: @font-size-h4; }
+h5, .h5 { font-size: @font-size-h5; }
+h6, .h6 { font-size: @font-size-h6; }
+
+.entry-content h1, .entry-content .h1 { font-size: @font-size-h2; }
+.entry-content h2, .entry-content .h2 { font-size: @font-size-h3; }
+.entry-content h3, .entry-content .h3 { font-size: @font-size-h4; }
+.entry-content h4, .entry-content .h4 { font-size: @font-size-h5; }
+.entry-content h5, .entry-content .h5 { font-size: @font-size-h6; }
+.entry-content h6, .entry-content .h6 { font-size: @font-size-h7; }
+
+
+h1.footer-title {
+  font-size: @font-size-h6;
+  border-bottom: 1px dashed @grey-light;
+  padding: 0 0 2px 0;
+  margin-bottom: 10px; }
+
+.section-title { 
+  color: #333;
+  margin: 50px 0 20px 0;
+  text-transform: uppercase;
+  border-bottom: 1px dashed #aaa; }
+
+.table-title {
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 0px;
+  padding-left: 10px;
+  text-transform: uppercase; }
+
+.paragraph-title {
+  margin-bottom: 0px; }
+
+//------------------------------------------------------ COPY
+p {
+	margin-bottom: 1em; }
+
+b, strong {
+	.ff-sans-con-med; }
+	
+dfn, cite, em, i {
+	font-style: italic; }
+	
+blockquote { //gone
+	padding: 0 1.5em;
+  border-left: 3px solid darken( @info, 15% );
+  color: darken( @info, 20% );
+  font-style: italic; }
+	
+address {
+	margin: 0 0 1.5em; }
+	
+pre {
+	background: #eee;
+	.ff-monospace;
+	font-size: 12px;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em; }
+	
+code, kbd, tt, var {
+	.ff-monospace; }
+	
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help; }
+	
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none; }
+	
+sup,
+sub {
+	font-size: @font-size-small;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline; }
+	
+sup {
+	bottom: 1ex; }
+	
+sub {
+	top: .5ex; }
+	
+small {
+	font-size: @font-size-small; }
+	
+big {
+	font-size: @font-size-large; }
+
+
+
+//------------------------------------------------------------------------------------------------------------ 03: FORMS
+
+button, 
+input, 
+select, 
+textarea {
+	font-size: 100%; /* Corrects font size not being inherited in all browsers */
+	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+	*vertical-align: middle; /* Improves appearance and consistency in all browsers */ }
+
+label {
+	display: block;
+}
+
+textarea {
+	.ff-sans-con-light;
+	color: @grey;
+	line-height: 1.4;
+	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+  padding: 10px;
+  height: 80px;
+	border: 1px solid #CCC;
+  vertical-align: top; /* Improves readability and alignment in all browsers */
+  border-radius: 0px; }
+
+form { font-size: .9em; 
+		//label { display: none;}
+    
+    input[type="color"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="email"],
+    input[type="month"],
+    input[type="number"],
+    input[type="range"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="time"],
+    input[type="url"],
+    input[type="week"],
+	textarea {
+    	.ff-sans-con-light;
+    	color: @grey;
+      padding: 5px 5px;
+      border: 1px solid #CCC;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; }
+
+    // input[type="search"] {
+    //   -webkit-appearance: none; }
+    
+    button, 
+		input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+      border-radius: 0px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-color: @grey-light;
+      border: 0px;
+      //border: 2px solid #B0E0F7;
+      font-size: 1em;
+      padding: 3px 10px;
+      color: @grey-lightest;
+
+      &:hover {
+        //border-color: #2BABE2;
+        background-color: #2BABE2;
+        color: #FFF;
+        cursor: pointer; }
+
+    } // input[type="submit"]
+}
+
+.form-error {
+  .ff-sans-con-med;
+  border: 2px solid @danger;
+  margin-bottom: 15px;
+  padding: 3px 10px;
+  color: darken(@danger, 10%);
+  background-color: lighten(@danger, 40%);
+}
+
+
+
+
+//------------------------------------------------------------------------------------------------------------ 04: LINKS
+
+a {
+	color: @link-color;
+  	text-decoration: none;
+  	//border-bottom: 1px solid @link-color;
+	
+	&:visited {
+		color: @link-color-visited; }
+	
+	&:hover, a:focus, a:active {
+		color: @link-color-hover;
+    text-decoration: none; }
+} //a
+
+
+
+
+//------------------------------------------------------------------------------------------------------------ 05: SELECTION
+::selection {
+	background: @select-highlight;
+	color: @select-color; }
+
+::-moz-selection {
+	background: @select-highlight;
+	color: @select-color; }
+
+img::selection {
+	background: transparent; }
+
+img::-moz-selection {
+	background: transparent; }
+
+
+
+
+
+//------------------------------------------------------------------------------------------------------------ 06: ALIGNMENT
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em; }
+	
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em; }
+	
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto; }
+	
+.text-align {
+	
+	&.left {
+		text-align: left; }
+
+	&.right {
+		text-align: right; }
+
+	&.justify {
+		text-align: justify; }
+
+  &.center {
+    text-align: center; }
+}
+
+
+	
+//------------------------------------------------------------------------------------------------------------ 07: CLEARING
+
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+
+
+
+
+
+//------------------------------------------------------------------------------------------------------------ 08: DOWNLOADS
+.download-container { text-align: center; }
+.download {
+	text-align: center;
+	.ff-serif-med;
+	font-size: 30px;
+
+
+	&.iata-form {
+		display: inline-block;
+		// border: 2px solid red;
+		padding: 4px;
+
+		a {
+			color: #FFF;
+			background-color: #E13A3E;
+			padding: 10px;
+			&:hover { }
+		}
+
+	}
+
+	&.disabled {
+		a {
+			background-color: lighten( #E13A3E, 30% );
+		}
+	}
+}
+
+.download-info { color: #E13A3E; }

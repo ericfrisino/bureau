@@ -1,0 +1,28 @@
+html { }
+
+body {
+  font-size: @font-size-base;
+  line-height: @line-height;
+  word-wrap: break-word;
+  color: @font-color;
+  .ff-base; }
+
+blockquote {
+  padding: 0 1.5em;
+  border-left: 3px solid lighten(@info, 10%);
+  color: @info;
+  font-style: italic; }
+
+hr {
+  background-color: @grey-light;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em; }
+
+@import "lists.less";
+
+img {
+  height: auto; /* Make sure images are scaled correctly. */
+  max-width: 100%; /* Adhere to container width. */ }
+
+@import "tables.less";

@@ -1,0 +1,133 @@
+.download-container { text-align: center; }
+.download {
+	text-align: center;
+	.ff-serif-med;
+	font-size: 30px;
+
+
+	&.iata-form {
+		display: inline-block;
+		// border: 2px solid red;
+		padding: 4px;
+
+		a {
+			color: #FFF;
+			background-color: #E13A3E;
+			padding: 10px;
+			&:hover { }
+		}
+
+	}
+
+	&.orange-button {
+		display: inline-block;
+		padding: 4px;
+
+		a {
+			color: #FFF;
+			background-color: #F6891F;
+			padding: 10px;
+
+			&:hover {
+				background-color: darken( #F6891F, 10% );
+			}
+		}
+	}
+
+	&.disabled {
+		a {
+			background-color: lighten( #E13A3E, 30% );
+		}
+	}
+}
+
+.download-info { color: #E13A3E; }
+
+
+
+a {
+	&.btn {
+		display: inline-block;
+		font-weight: bold;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		user-select: none;
+		border: 1px solid transparent;
+		padding: 4px 6px 2px 6px;
+		margin-bottom: 1rem;
+	}
+
+	.btn-lg {
+		padding: 0.375rem 1rem;
+		font-size: 1.3rem;
+		line-height: 1.5;
+		margin-bottom: 1rem;
+	}
+
+	.btn-sm {
+		padding: 0.375rem 1rem;
+		font-size: 0.8rem;
+		line-height: 1.5;
+		margin-bottom: 1rem;
+	}
+
+	&.btn-shop {
+		color: #fff;
+		background-color: #2babe2;
+	}
+	&.btn-shop:hover {
+		background-color: #074770;
+		text-decoration: none;
+	}
+
+
+	.btn-block {
+		display: block;
+		width: 100%;
+		padding-left: 0;
+		margin-left: 0;
+		padding-right: 0;
+		margin-right: 0;
+	}
+
+	.btn-fill {
+		width:inherit;
+	}
+
+	.btn-disabled, a.btn-disabled{
+		color: #fff;
+		background-color: #babcbe;
+	}
+	a.btn-disabled:hover {
+		text-decoration: none;
+		cursor: no-drop;
+	}
+
+	.btn-success, a.btn-success {
+		color: #fff;
+		background-color:#49a942;
+	}
+	a.btn-success:hover {
+		background-color: #2b6527;
+		text-decoration: none;
+	}
+
+	.btn-secondary, a.btn-secondary {
+		color: #fff;
+		background-color:#074770;
+	}
+	a.btn-secondary:hover {
+		background-color:#00243b;
+		text-decoration: none;
+	}
+
+	.btn-download, a.btn-download {
+		color: #fff;
+		background-color: #ed1c24;
+	}
+	a.btn-download:hover {
+		background-color: #be1e2d;
+		text-decoration: none;
+	}
+}

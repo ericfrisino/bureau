@@ -9,11 +9,32 @@
 	],
 "creatorBuild": "28905",
 "files": {
+	"/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/.gitattributes",
+		"oF": 0
+		},
 	"/404.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/404.php",
+		"oF": 0
+		},
+	"/_content/industries-we-serve.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/_content/industries-we-serve.html",
+		"oF": 0
+		},
+	"/_content/partners.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/_content/partners.html",
 		"oF": 0
 		},
 	"/_content/store-archive-training.html": {
@@ -28,6 +49,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "/archive-ads.php",
+		"oF": 0
+		},
+	"/archive-careers.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/archive-careers.php",
 		"oF": 0
 		},
 	"/archive-downloads.php": {

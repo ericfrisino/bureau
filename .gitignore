@@ -1,1 +1,5 @@
-config.codekit3
+# Ignore codekit files
+*.codekit3
+
+# Ignore system files
+.DS_Store

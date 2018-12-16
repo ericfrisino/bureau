@@ -30,6 +30,9 @@
   <!-- Import FontAwesome -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
+	<!-- Import TypeKit -->
+	<link rel="stylesheet" href="https://use.typekit.net/pdt2wdz.css">
+
   <!-- Call pinit.js -->
   <!--<script async defer data-pin-hover="true" data-pin-color="red" src="//assets.pinterest.com/js/pinit.js"></script>-->
 
